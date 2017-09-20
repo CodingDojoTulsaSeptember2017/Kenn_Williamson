@@ -1,0 +1,125 @@
+#wrapper{
+    background: radial-gradient(grey,black);
+    width: 970px;
+    margin: 0 auto;
+}
+
+#header{
+    background: linear-gradient(lightblue,white);
+    
+}
+
+#header h1{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    display: inline-block;
+    width: 450px;
+    margin: 0px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+#header h3{
+    font-family: sans-serif;
+    display: inline-block;
+    width: 450px;
+    text-align: right;
+    padding: 10px;
+    margin: auto;
+    margin-right: 0px;
+}
+
+#topHalf{
+    margin: 22px;
+}
+#topHalf img{
+    border: 3px solid lightslategray;
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+*{
+    font-family: sans-serif;
+}
+
+#aboutbox{
+    width: 520px;
+    height: 247px;
+    display: inline-block;
+    background: linear-gradient(to right, white, lightblue);
+}
+
+p{
+    margin:10px;
+}
+.boxhead{
+    color: white;
+    background: linear-gradient(darkgrey, grey, darkgrey);
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#bottomHalf{
+    margin:auto;
+    width: 950px;
+    margin-bottom: 15px;
+}
+.vertCol{
+    width: 290px;
+    height: 670px;
+    margin: 11px;
+    display: inline-block;
+    vertical-align: top;
+    background: linear-gradient(to right, white, lightblue);
+}
+
+.vertCol img{
+    width:100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+}
+
+.vertCol p{
+    height: 250px;
+}
+.techBox{
+    vertical-align: bottom;
+}
+.techBox img{
+    width: 43px;
+    display: inline-block;
+    margin: 5px;
+
+}
+
+button{
+    margin: auto;
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    display: block;
+    border: 1px solid red;
+    box-shadow: 3px 3px 10px black;
+}
+
+#footer{
+    background: linear-gradient(white,lightblue);
+}
+
+#footer p{
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+#footer img{
+    height: 15px;
+    width: auto;
+}
