@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Arena Fight Ninja Action Awesomeness</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#selectPlayers").hide();
+            
+            $("#selectStage table tr td").click(function(){
+                var backUrl = $(this).attr('back-alt');
+                var backUrl = `url('${backUrl}')`;
+                $("#wrapper").css('background-image', backUrl);
+                $("#selectStage").slideUp();
+                $("#selectPlayers").slideDown();
+            })
+
+            $("#p1sel").change(function(){
+                $("#player1").attr('src',$(this).val());
+            })
+
+            $("#p2sel").change(function(){
+                $("#player2").attr('src',$(this).val());
+            })
+
+            $("#fighto").click(function(){
+                $("#menus").slideUp();
+            })
+        })
+
+
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="menus">
+            <div id="selectStage">
+                <h1>Select Arena</h1>
+                <table>
+                    <tr>
+                        <td back-alt="img/beach.jpg">beach</td>
+                        <td back-alt="img/earth.jpg">planet</td>
+                        <td back-alt="img/dojo.jpg">dojo</td>
+                    </tr>
+                    <tr>
+                        <td back-alt="img/forest.jpg">forest</td>
+                        <td back-alt="img/matrix.jpg">matrix</td>
+                        <td back-alt="img/snow.jpg">snow</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="selectPlayers">
+                <h1>Select Players</h1>
+                <table>
+                    <tr>
+                        <td>
+                            <select name="player1" id="p1sel">
+                                <option value=""></option>
+                                <option value="img/leo.png">Leo</option>
+                                <option value="img/donny.png">Donny</option>
+                                <option value="img/mikey.png">Mikey</option>
+                                <option value="img/raphael.png">Raphel</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="player2" id="p2sel">
+                                <option value=""></option>
+                                <option value="img/leo.png">Leo</option>
+                                <option value="img/donny.png">Donny</option>
+                                <option value="img/mikey.png">Mikey</option>
+                                <option value="img/raphael.png">Raphel</option>                    
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <button id="fighto">Fighto</button>
+            </div>
+        </div>
+        <div id="players">
+            <img id="player1" src="" alt="">
+            <img id="player2" src="" alt="">
+        </div>
+
+    </div>
+</body>
+</html>

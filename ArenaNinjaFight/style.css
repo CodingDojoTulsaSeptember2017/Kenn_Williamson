@@ -1,0 +1,53 @@
+#wrapper{
+    border: 3px solid grey;
+    margin: 10px auto;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1500px;
+    height: 1000px;
+}
+
+#menus{
+    width: 500px;
+    margin: 200px auto 0;
+    height: 200px;
+    border: 2px solid grey;
+    background-color: rgba(200, 200, 200, 0.7);
+    border-radius: 5px;
+}
+
+h1{
+    color: yellow;
+    text-shadow: 2px 2px white;
+    text-align: center;
+
+}
+
+table{
+    margin: 0 auto;
+}
+
+td{
+    padding: 5px 5px;
+    background-color: white;
+    border-radius: 3px;
+
+}
+
+#fighto{
+    margin: 10px auto;
+    display: block;
+}
+
+#dropdowns{
+    display: block;
+    margin: 0 auto;
+}
+
+#players img{
+    width: 300px;
+    display: inline-block;
+    margin: 0px 200px;
+}
