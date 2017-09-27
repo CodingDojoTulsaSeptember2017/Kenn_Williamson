@@ -9,6 +9,13 @@
         $(document).ready(function(){
             $("#selectPlayers").hide();
             
+            $("#selectStage table tr td").hover(function(){
+                var backUrl = $(this).attr('back-alt');
+                var backUrl = `url('${backUrl}')`;
+                $("#wrapper").css('background-image', backUrl);
+
+            })
+
             $("#selectStage table tr td").click(function(){
                 var backUrl = $(this).attr('back-alt');
                 var backUrl = `url('${backUrl}')`;
