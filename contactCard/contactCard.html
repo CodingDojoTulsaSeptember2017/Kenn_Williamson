@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				//Extract values from input fields
+				var first = $("#firstNameBox").val();
+				var last = $("#lastNameBox").val();
+				var desc = $("#descBox").val();
+				//Append dynamically created div to DOM
+				$("#rightContacts").append("<div class = 'card'><h1>" + first + " " + last+"</h1><p class = 'back'> " + desc +"</p></div>");
+                $(".back").hide();
+                //Clear form fields by setting their value to empty
+				$("#firstNameBox").val("");
+				$("#lastNameBox").val("");
+				$("#descBox").val("");
+				//Return false to prevent refresh
+				return false;
+			});
+			
+			$(document).on('click', '.card', function(){
+				//Toggle the #cards' childrens' display property
+				$(this).children().toggle();
+			});
+		});
+	</script>
+    <title>Contact Card</title>
+</head>
+<body>
+    <div id='wrapper'>
+        <div id='leftForm'>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label for="firstName">First name:</label></td>
+                        <td><input type="text" name="firstName" id="firstNameBox"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastName">Last name:</label></td>
+                        <td><input type="text" name="lastName" id="lastNameBox"></td>
+                    </tr>
+                </table>
+                <h1>Description:</h1>
+                <textarea name="description" id="descBox"></textarea>
+                <button>Submit</button>                  
+            </form>
+        </div>
+        <div id='rightContacts'>
+
+        </div>
+    </div>
+</body>
+</html>

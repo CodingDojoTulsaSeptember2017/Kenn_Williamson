@@ -1,0 +1,38 @@
+#wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#leftForm{
+    width: 20%;
+    display: inline-block;
+}
+
+#leftForm table{
+    width: 95%;
+    margin: 0 auto;
+}
+
+input{
+    width: 95%;
+}
+
+#leftForm h1{
+    width: 95%;
+}
+
+#leftForm textarea{
+    width: 95%;
+    height: 200px;
+}
+
+#rightContacts{
+    width: 70%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.card{
+    border: 2px solid black;
+    width: 300px;
+}
