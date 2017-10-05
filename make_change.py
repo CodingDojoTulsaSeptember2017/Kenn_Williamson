@@ -26,3 +26,5 @@ for money in range(0,20):
     random_value = int(random.random()*5000)
     print("The random amount is ${}.".format(random_value/100))
     print(make_change(random_value))
+
+
